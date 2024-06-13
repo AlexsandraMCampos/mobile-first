@@ -7,9 +7,12 @@
   --branco: #ffffff;
   --cor-principal: #ff8a5c;
   --cor-secundaria: #49beb7;
+  --cor-terciaria:#EB9B00;
+  --cor-azul:#002F52;
   --cor-um: #ff6c98;
   --cor-dois: #008be9;
   --cor-tres: #d12bff;
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   --fonte-principal:"Poppins";
 }
 
