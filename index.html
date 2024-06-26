@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile First</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display-swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="reset.css" />
   </head>
 
   <body>
@@ -24,32 +27,25 @@
       <div class="container">
         <input type="checkbox" id="menu" class="container_botao" />
         <label for="menu">
-          <span class="cabecalho_menu-hamburger container_imagem"></span>
+          <span class="cabecalho_menu-hamburger container_imagem "></span>
         </label>
         <ul class="lista-menu">
           <li class="lista-menu_titulo">Categorias</li>
           <li class="lista-menu_item">
-            <a href="#" class="lista-menu_link">Cordel</a>
+            <a href="#" class="lista-menu_link">Cadeiras</a>
           </li>
-          <li class="lista-menu_item">
-            <a href="#" class="lista-menu_link">Infantil</a>
-          </li>
-          <li class="lista-menu_item">
-            <a href="#" class="lista-menu_link">Literatura</a>
-          </li>
-          <li class="lista-menu_item">
-            <a href="#" class="lista-menu_link">Machado de Assis</a>
-          </li>
-        </ul>
-        <a href="#"><img src="img/Menu.svg" alt="Menu" /></a>
-        <img src="img/Logo (1).svg" alt="Logo" />
-      </div>
+<ul class="opções">
+  <li class="opções__item">Categorias</li>
+  <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+  <li class="opções__item"><a href="#" class="opções__link">Ambientes</a></li>
+ 
+</ul>
       <div class="container">
         <a href="#"
           ><img
             src="img/Favoritos.svg"
             alt="Meus favoritos"
-            class="container_imagem"
+            class="container_imagem "
         /></a>
         <a href="#"
           ><img
@@ -65,14 +61,15 @@
 
     <!-- banner introdução -->
     <section class="banner">
-      <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-      <p class="banner__texto">
-        Encontre em nossa estante o que precisa para seu desenvolvimento!
-      </p>
-      <input
-        type="search"
-        class="banner__pesquisa"
-        placeholder="Qual será sua próxima leitura?"
+      <h2 class="banner__titulo">Cadeiras e Poltronas</h2>
+      <p class="banner__texto">O melhor do design nacional e internacional</p>
+      <input type="search" class="banner__pesquisa" placeholder="Buscar" />
+    </section>
+
+    <section class="introducao">
+      <img
+        src="./img/poltona-capa.jpg"
+        alt="foto de uma sala com duas poltronas"
       />
     </section>
 
@@ -88,23 +85,29 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="img/ApacheKafka.svg" alt="Livro" />
+            <img src="img/cadeira-puff.jpg" alt="cadeira" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Arquitetura.svg" alt="Livro" />
+            <img src="img/cadeira-verde.jpg" alt="cadeira" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Javascript.svg" alt="Livro" />
+            <img src="img/cadeira-imperio.jpg" alt="cadeira" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Nodejs.svg" alt="Livro" />
+            <img src="img/cadeira-madeira.jpg" alt="cadeira" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Portugol.svg" alt="Livro" />
+            <img src="img/cadeira-moderna.jpg" alt="cadeira" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Tuning.svg" alt="Livro" />
+            <img src="img/cadeira-palha.jpg" alt="cadeira" />
           </div>
+          <div class="swiper-slide">
+            <img src="img/cadeira-azul.jpg" alt="cadeira" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cadeira-office.jpg" alt="cadeira" />
+          </div>          
         </div>
 
         <!-- If we need navigation buttons -->
@@ -117,31 +120,37 @@
     <div class="card">
       <div class="card__descrição">
         <div class="descrição">
-          <h2 class="descrição__titulo">
-            Talvez você também se interesse por...
-          </h2>
-          <h3 class="descrição__titulo-livro">Angular 11 e Firebase</h3>
+          <h2 class="descrição__titulo">Seu momento leitura...</h2>
+          <h3 class="descrição__titulo-livro">Poltrona Opus</h3>
           <p class="descrição__texto">
-            Construindo uma aplicação integrada com a plataforma do Google.
+            Nossas coleções são uma verdadeira celebração à individualidade.
+            Descubra como a podemos transformar sua casa em um refúgio de
+            elegância e conforto, onde você pode viver o estilo de vida que
+            sempre desejou.
           </p>
         </div>
-          <img src="./img/Angular.svg" alt="logo Angular" />
-        </div>  
-        
-        <div class="card__botões">
-          <ul class="botões">
-            <li class="botões__item">
-              <img src="./img/Favoritos.svg" alt="Favoritar Livro">
-            </li>
-            <li class="botões__item">
-              <img src="./img/Compras.svg" alt="Adicionar ao carrinho de compras">
-            </li>
-          </ul>
-          <a href="#" class="botões__ancora">Saiba Mais</a>
+        <img class="produto__destaque"
+          src="./img/poltrona-conforto.jpg"
+          alt="poltrona de leitura"
           
-        </div>
-    </div>
+        />
+      </div>
 
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="./img/Favoritos.svg" alt="Favoritar" />
+          </li>
+          <li class="botões__item">
+            <img
+              src="./img/Compras.svg"
+              alt="Adicionar ao carrinho de compras"
+            />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba Mais</a>
+      </div>
+    </div>
 
     <!-- carrossel Mais Vendidos -->
     <section class="carrossel__mais-vendidos">
@@ -155,22 +164,22 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="img/Tuning.svg" alt="Livro" />
+            <img src="img/poltrona-verde.jpg" alt="poltrona" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Nodejs.svg" alt="Livro" />
+            <img src="img/poltrona-cinza.jpg" alt="poltrona" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Portugol.svg" alt="Livro" />
+            <img src="img/poltrona-couro.jpg" alt="poltrona" />
           </div>
           <div class="swiper-slide">
-            <img src="img/ApacheKafka.svg" alt="Livro" />
+            <img src="img/poltrona-barbie.jpg" alt="poltrona" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Arquitetura.svg" alt="Livro" />
+            <img src="img/poltrona-vinho.jpg" alt="poltrona" />
           </div>
           <div class="swiper-slide">
-            <img src="img/Javascript.svg" alt="Livro" />
+            <img src="img/poltrona-marrom.jpg" alt="poltrona" />
           </div>
         </div>
 
@@ -180,39 +189,92 @@
       </div>
     </section>
 
-     <!-- segundo card -->
-     <div class="card">
+    <!-- segundo card -->
+    <div class="card">
       <div class="card__descrição">
         <div class="descrição">
-          <img src="./img/Estrelinhas.svg" alt="Estrelinhas">
-          <h2 class="descrição__titulo">
-            Autora do Mês
-          </h2>
-          <h3 class="descrição__titulo-livro">Juliana Agarikov</h3>
+          <img src="./img/Estrelinhas.svg" alt="Estrelinhas" />
+          <h2 class="descrição__titulo">Designer do Mês</h2>
+          <h3 class="descrição__titulo-livro">Emma Marques</h3>
           <p class="descrição__texto">
-            Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+            A jovem designer Emma Marques apresenta nesta coleção peças que
+            mesclam elegância e conforto com um design ergonômico e
+            sustentável, redefinindo o conceito de mobiliário moderno.
           </p>
-        </div>
-          <img src="./img/Perfil-escritora 1.svg" alt="Perfil Escritora" />
-        </div>  
-        
-        <div class="card__botões">
-          <ul class="botões">
-            <li class="botões__item">
-              <img src="./img/Favoritos.svg" alt="Favoritar Livro">
-            </li>
-            <li class="botões__item">
-              <img src="./img/Compras.svg" alt="Adicionar ao carrinho de compras">
-            </li>
-          </ul>
-          <a href="#" class="botões__ancora">Saiba Mais</a>
-          
-        </div>
+        </div> 
+        <img class="perfil__designer" src="./img/perfil-designer" alt="Perfil Escritora" ; />
+      </div>
+
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="./img/Favoritos.svg" alt="Favoritar Livro" />
+          </li>
+          <li class="botões__item">
+            <img
+              src="./img/Compras.svg"
+              alt="Adicionar ao carrinho de compras"
+            />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba Mais</a>
+      </div>
     </div>
 
-    
+    <!-- sessão topicos -->
+    <section class="topicos">
+      <h2 class="topicos__titulo">Marcas</h2>
+      <ul class="topicos__lista">
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Catarina</a>
+        </li>
 
-    
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Moon</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Forentin</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Odete</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Nemora</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Pandora</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Jalapão</a>
+        </li>
+
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Jarinu</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações sobre decorações, tendências, promoções e muito mais
+      </p>
+      <input
+        type="email"
+        class="contato__email"
+        placeholder="Cadastre seu email"
+      />
+    </section>
+
+    <hr />
+    <footer class="rodape">
+      <h2 class="rodape__titulo">Projeto Mobile First by Alexsandra</h2>
+    </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
